@@ -24,7 +24,7 @@ def main():
         print('Testing count_char:')
         test(pythonBasics1.count_char('vest','v'), 1)
         test(pythonBasics1.count_char('crypt','c'), 1)
-        test(pythonBasics1.count_char('#python##','#'), 3)
+        test(pythonBasics1.count_char('#python##','#'), 2)
         test(pythonBasics1.count_char('hello','H'), 0)
         test(pythonBasics1.count_char('',' '), 0)
         test(pythonBasics1.count_char('123',''), 0)
@@ -32,7 +32,7 @@ def main():
         test(pythonBasics1.count_char(' ',' '), 1)
         test(pythonBasics1.count_char('1211211','1'), 5)
         test(pythonBasics1.count_char('Abracadabra','a'), 4)
-        test(pythonBasics1.count_char('pXXXp','X'), 3)
+        test(pythonBasics1.count_char('pXXXp','x'), 3)
         test(pythonBasics1.count_char(' 6 6',' '), 2)
 
     if check_is_power_of:
@@ -56,10 +56,10 @@ def main():
         print("-------------------------------------------------------")
         print('Testing longest_word')
         test(pythonBasics1.longest_word("This is a test"),"test")
-        test(pythonBasics1.longest_word("Autumn is a second spring when every leaf is a flower"),"flower")
-        test(pythonBasics1.longest_word("The truth springs from arguments amongst friends"),"arguments")
-        test(pythonBasics1.longest_word("He who has a why to live for can bear almost any how"),"almost")
-        test(pythonBasics1.longest_word("It is only those who do nothing who makes no mistake"),"mistake")
+        test(pythonBasics1.longest_word("Autumn is a second spring when every leaf is a flower."),"flower")
+        test(pythonBasics1.longest_word("The truth springs from arguments amongst friends."),"arguments")
+        test(pythonBasics1.longest_word("He who has a why to live for can bear almost any how."),"almost")
+        test(pythonBasics1.longest_word("It is only those who do nothing who makes no mistake."),"mistake")
         test(pythonBasics1.longest_word(""),"")
 if __name__ == '__main__':
   main()
