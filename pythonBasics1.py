@@ -27,7 +27,7 @@ def is_power_of(i,j):
 # Define a function longest_word(s) that takes a string s
 # s is a sentence made up of words separated by a single space " "
 # return the longest word in the sentence
-#
+# if 2 or more words are tied for longest then return the one that occures LATEST in the sentence
 # in case s in an empty string return an empty string
 def longest_word(s):
   # YOUR CODE HERE
